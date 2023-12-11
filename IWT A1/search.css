@@ -1,0 +1,247 @@
+.body{
+    background-color: #292929;
+}
+ul.a {
+	list-style-type: none;
+      
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: -8px;
+    padding-top: 20px;
+    padding-right: 10px;
+  	overflow: hidden;
+	background-color: #ffffff;
+	margin-bottom: 10px;
+    box-shadow:10px 10px 20px #aaaaaa ;
+}
+
+
+li.b{
+		float: right;	
+}
+
+a.c{
+	padding: 8px;
+}
+
+li.b a.c{
+
+	display: block;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+    font-size: 15pt;
+    font-weight: 500;
+}
+
+li.b a.c:hover {
+	background-color: #f86815;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+.menu{
+    display: block;
+
+}
+
+
+.search-bar {
+    margin: 5px;
+    float: right;
+ 
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+
+.search-bar input[type="text"] {
+    height: 20px;
+    padding: 10px;
+    border: 1px solid #949494;
+    border-radius: 10px;
+    font-size: 14pt;
+    
+}
+
+.search-bar button {
+    height: 40px;
+    padding: 5px 10px;
+    background-color: #29d838;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-size: 14pt;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.search-bar button:hover{
+    background-color: #068d33;
+}
+.account:hover{
+    background-color: #1926da;
+}
+.postads:hover{
+    background-color: #c55e0a;
+}
+
+.logo{
+    float: left;
+    margin: 5px;
+}
+
+.logo img{
+    height: 40px;
+}
+
+.postads {
+    float: right;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: #ee8e10;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 5px;
+    font-size: 14pt;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.account {
+    float: right;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: #1070ee;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin: 5px;
+    font-size: 14pt;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.main{
+    margin-top: 100px;
+    background-color: rgb(252, 174, 30);
+    margin-top: 10px;
+    max-width: 400px;
+    padding: 20px;
+    color: #292929;
+    text-align: center;
+    border-radius: 20px;
+}
+input{
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.uploadBtn{
+    height: 30px;
+    padding: 5px;
+    background-color: #292929;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-size: 12pt;
+    font-weight: bold;
+    border-radius: 10px;
+}
+label{
+    font-size: 12pt;
+    font-weight: bold;
+}
+.searchBox{
+  width: 500px;
+  height: 250px; 
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 15px;
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+  padding: 20px;
+  align-items: center;
+}
+#logo{
+    width: 20px;
+    height: 5px;
+}
+.productImage{
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.getSearchData{
+    text-align: center;
+}
+
+.getSearchData button {
+    height: 40px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-size: 14pt;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.getSearchData input {
+    height: 35px;
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    margin-left: 5px;
+    font-size: 14pt;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.leftSide{
+    width: 50%;
+    height: auto;
+    margin-left: 20px;
+    float: left;
+    border-radius: 15px;
+    background-color: rgb(255, 163, 77);
+}
+.showItem {
+    background-color: #ffffff;
+    border-radius: 15px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.showItem img{
+    margin: 20px;
+}
+.premiAdd{
+    margin-left: 10px;
+    border-radius: 15px;
+    float: left;
+    width: 45%;
+    left: 30px;
+    height: auto;
+    background-color: rgb(255, 163, 77);
+}
+.midPart{
+    width: 5%;
+    height: auto;
+    float: left;
+}
+.headOne{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.input{
+
+    min-width: 200px;
+}

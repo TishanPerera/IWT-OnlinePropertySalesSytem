@@ -1,0 +1,240 @@
+.row {
+	margin-top:100px;
+  display: flex;
+}
+
+.pictureslide {
+  flex: 60%;
+  padding: 15px;
+}
+.pictureslide {
+  width: 40%;
+  height: 480px;
+  background-color: #eee;
+}
+.slides {
+	display: none;
+ }
+ .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+ @-webkit-keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.img1{
+	width: 100%;
+    height: 480px;
+	object-fit: contain;
+ }
+ .picturetext{
+	color: white;
+	font-size: 55px;
+	font-weight: bolder;
+	position: static;
+	margin-top: -240px;
+	width: 100%;
+	text-align: center;
+ }
+ 
+ /* CSS for the previous arrow */
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+}
+
+.prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* CSS for the next arrow */
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 500px;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+}
+
+.menubox {
+	background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+	flex: 30%;
+	padding: 15px 0;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 480px;
+}
+
+.menubox h2 {
+	padding-left: 8px;
+}
+	
+.box {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  margin: 10px;
+  margin-bottom: 20px;
+  height: 400px; 
+}
+.buttonbox {
+	display: flex;
+  justify-content: center;
+}
+
+.button {
+  margin: 5px;
+  padding: 10px 20px;
+      
+}
+.content {
+	
+	margin-top: 20px;
+  padding: 20px;
+	padding-left:60px;
+  background-color: rgb(19, 30, 37);
+  border: 1px solid #ccc;
+}
+.panel{
+	padding-left:100px;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top; 
+  width:300px;
+  height: 200px; 
+  margin-right: 20px;
+	margin-left: 20px;  
+  margin-bottom:10px;
+  border: 1px solid #ccc;
+  padding: 10px; 
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+	text-align: center;
+}
+.card:hover {
+  background-color: #F3C364;
+}
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+.workflow-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 250px; 
+ 
+	margin-right: 20px;
+	margin-left: 15px;  
+	margin-bottom:10px;
+  padding: 10px; 
+  border-radius: 20px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: white;
+	
+}
+.picturetext2{
+	color: white;
+	font-size: 35px;
+	font-weight: bolder;
+	position: static;
+	margin-top: -70px;
+	width: 100%;
+	text-align: center;
+ }
+ 
+ /*.......footer.........*/
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footercontainer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.footer-links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+.social-media-links {
+  margin-top: 20px;
+}
+
+.social-media-links a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-media-links img {
+  width: 24px;
+  height: 24px;
+}

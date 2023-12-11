@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Property Sales System</title>
+
+		<!--CSS Conection-->
+		<link rel="stylesheet" href="HomeStyleCSS.css">
+	
+		
+		<!--header file and css Conection-->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>TRADEL</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" href="normalize.css">
+	
+	
+	</head>
+	<body>
+		<!--Navigation menu bar-->
+			<div class="menu">
+			
+        <ul class="a">
+			<!--logo-->
+            <div class="logo">
+                <img src="img/LOGO PNG.png">
+            </div>
+            
+			<form class="search-bar" method="get" action="search.php">
+				<input type="text" placeholder="Enter Keywords" name="search">
+				<button type="submit">Search</button>
+			</form>
+			
+            <li class="b"><a href="Home.php" class="c"> Home</a></li>
+            <li class="b"><a href="/news.html" class="c"> News</a></li>
+            <li class="b"><a href="/register.html" class="c"> Contact</a></li>
+            <li class="b"><a href="/about.php" class="c"> About Us</a></li>
+		</ul>
+		</div>
+		
+		<hr/>
+		
+			
+		<div class="row">
+				<!--Picture slide show-->
+			<div class="pictureslide" style="background-color:#ddd;">
+				
+				<div class="slides fade">
+				<img class="img1" src="img/PageBanner1.png"  alt="image">
+				<div class="picturetext">Discover a place <br/>you'll love to live</div>
+				</div>
+				
+				<div class="slides fade">
+				<img class="img1" src="img/PageBanner2.png"  alt="image">
+				<div class="picturetext">Discover a place <br/>you'll love to live</div>
+				</div>
+				
+				<div class="slides fade">
+				<img class="img1" src="img/banner3.jpg"  alt="image">
+				<div class="picturetext">Discover a place <br/>you'll love to live</div>
+				</div>
+				
+				<!--slide arrows-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+			</div>
+				
+			<!--Sign in and register box-->	
+			<div class="menubox" >
+				<div class="box">
+					<div>
+					<img class="img2" src="img/user.png" width="150" height="150" alt="image">
+					<h2 style="font-family: Verdana; color: white;">Hi!</h2><br/><br/>
+					<div class="buttonbox">
+						<a href="Signin.php"><button class="button" >Sign In</button></a>
+						<a href="Register.php"><button class="button">Register</button></a>
+					</div>
+					</div>
+				</div>
+			
+				
+
+			</div>
+		</div>
+		
+		<hr/>
+		<div class="content" id="content">
+		
+			<div class="panel">
+			
+						<a href="search.php">
+						<div class="card">
+							<img src="img/image1.png"  width="100" height="100" alt="Icon 1" >
+							<div class="details">
+								<h3>Find Properties</h3>
+							</div>
+							</div>
+						</a>
+						
+						<a href="postAdd.php">
+						<div class="card">
+							<img src="img/image3.png"  width="100" height="100" alt="Icon 2" >
+							<div class="details">
+								<h3>Post Add</h3>
+							</div>
+						</div>
+						</a>
+						
+						<a href="viewfavourite.php">
+						<div class="card">
+							<img src="img/image2.png"  width="100" height="100" alt="Icon 2" >
+							<div class="details">
+								<h3>Veiw Favouites</h3>
+							</div>
+						</div>
+						</a>		
+			</div>
+			<hr/>
+			
+			<div class="workflow">
+				<center><h1 style="font-family: Verdana; color: white;">How it works</h1></center>
+				<br/>
+				<div class="workflow-item">
+				<img src="img/numdot.png"  width="100" height="100" alt="num_dot" >
+				<div class="picturetext2">1</div><br/><br/>
+				<h3>Evaluate Property</h3><br/>
+				<p>Our Evaluate Property feature provides accurate and reliable market valuations for properties, helping users make informed decisions based on current market trends and data.</p>
+				</div>
+				<div class="workflow-item">
+				<img src="img/numdot.png"  width="100" height="100" alt="num_dot" >
+				<div class="picturetext2">2</div><br/><br/>
+				<h3>Meet the seller</h3><br/>
+				<p>By meting the Seller allows buyers to connect directly with property sellers, fostering a transparent and personalized experience. Get to know the seller, ask questions, and gain valuable insights about the property firsthand.</p>
+				</div>
+				<div class="workflow-item">
+				<img src="img/numdot.png"  width="100" height="100" alt="num_dot" >
+				<div class="picturetext2">3</div><br/><br/>
+				<h3>Close the Deal</h3><br/>
+				<p>the property sales process, facilitating smooth transactions between buyers and sellers. From negotiation to finalizing paperwork, bringing the deal to a successful conclusion.</p>
+				</div>
+				<div class="workflow-item">
+				<img src="img/numdot.png"  width="100" height="100" alt="num_dot" >
+				<div class="picturetext2">4</div><br/><br/>
+				<h3>Have Your Property</h3><br/>
+				<p>Find your dream home among our wide selection of listings and take the first step towards making it your own.From browsing to financing options, we're here to guide you throughout the process of owning your property.</p>
+				</div>
+			</div>
+			
+						
+				
+					
+		</div>
+		
+	<br/><br/>
+	
+	<!--Picture slide JS code--->
+	<script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+			
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+			
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+   
+  
+  
+		<!--Footer -->
+	<footer>
+  <div class="footercontainer">
+    <div class="footer-content">
+      <p>&copy; 2023  TRADEL. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+       
+      </ul>
+      <div class="social-media-links">
+        <a href="https://www.facebook.com/login"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="https://twitter.com/login"><img src="img/twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/login/"><img src="img/instagram.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+	</body>	
+</html>
